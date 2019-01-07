@@ -1,0 +1,11 @@
+docker-compose
+pandas
+sqlalchemy
+jupyter
+altair
+vega
+jupyterlab
+psycopg2-binary
+pgcli
+
+
