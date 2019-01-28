@@ -8,5 +8,6 @@ jupyterlab
 psycopg2-binary
 pgcli
 rtree
+geopandas
 
 
