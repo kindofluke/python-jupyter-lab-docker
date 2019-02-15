@@ -10,5 +10,9 @@ pgcli
 rtree
 geopandas
 selenium
+livereload
+vega-datasets
+apsw
+
 
 
