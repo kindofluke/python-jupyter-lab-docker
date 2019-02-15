@@ -9,5 +9,6 @@ psycopg2-binary
 pgcli
 rtree
 geopandas
+selenium
 
 
