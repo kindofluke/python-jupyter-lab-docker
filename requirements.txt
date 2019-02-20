@@ -13,6 +13,7 @@ selenium
 livereload
 vega-datasets
 apsw
+folium
 
 
 
