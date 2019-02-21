@@ -14,6 +14,7 @@ livereload
 vega-datasets
 apsw
 folium
+jupyter_kernel_gateway
 
 
 
