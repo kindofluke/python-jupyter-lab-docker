@@ -11,20 +11,28 @@ The goal is to allow this image to be used in docker compose.
 A sample `docker-compose.yml`  would be as follows. It's important to utilize a propoer .dockerignore 
 
 ```
-version: '3'
+version: '2.4'
 services:
   notebook:
-    image: python-jupyter-lab  
-    command: sh -c "pip install -r /code/requirements.txt; jupyter notebook --ip=0.0.0.0 --no-browser --notebook-dir=/code  --NotebookApp.token='' --allow-root"
+    image: kindofluke/python-jupyter-lab-docker
+    environment:
+      PGPASSWORD: ${PGPASSWORD}
+      GDAL_DATA: /usr/local/lib/python3.6/site-packages/fiona/gdal_data
+      PROJ_DATA: /usr/local/lib/python3.6/site-packages/fiona/proj_data
+    command: sh -c "jupyter notebook --ip=0.0.0.0 --no-browser --notebook-dir=/code  --NotebookApp.token='' --allow-root"
     ports:
     - "8888:8888"
+    - "9000:9000"
     volumes:
     - .:/code
-    environment:
-        - PGPASSWORD
 
 ```
 
 
 
+OR you can run the following to just start one up. 
 
+```
+docker run -v $(pwd):/code -p 8888:8888    -it --rm kindofluke/python-jupyter-lab-docker jupyter lab --ip=0.0.0.0 --no-browser --notebook-dir=/code  --NotebookApp.token='' --allow-root
+
+```

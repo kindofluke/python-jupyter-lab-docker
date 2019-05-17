@@ -2,7 +2,7 @@ docker-compose
 pandas
 sqlalchemy
 jupyter
-altair
+altair==2.4.1
 vega
 jupyterlab
 psycopg2-binary
@@ -15,6 +15,5 @@ vega-datasets
 apsw
 folium
 jupyter_kernel_gateway
-
-
-
+sklearn
+sklearn-pandas
