@@ -2,7 +2,7 @@ docker-compose
 pandas
 sqlalchemy
 jupyter
-altair==2.4.1
+altair
 vega
 jupyterlab
 psycopg2-binary
@@ -17,3 +17,5 @@ folium
 jupyter_kernel_gateway
 sklearn
 sklearn-pandas
+matplotlib
+seaborn
