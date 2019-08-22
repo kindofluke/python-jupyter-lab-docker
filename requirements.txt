@@ -17,3 +17,5 @@ folium
 jupyter_kernel_gateway
 sklearn
 sklearn-pandas
+matplotlib
+bokeh
