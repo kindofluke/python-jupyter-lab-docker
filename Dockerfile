@@ -54,6 +54,7 @@ RUN CD_VERSION=$(if [ ${CHROME_DRIVER_VERSION:-latest} = "latest" ]; then echo $
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 RUN jupyter labextension install @ijmbarr/jupyterlab_spellchecker
+RUN jupyter labextension install jupyterlab_bokeh
 
 ENV GDAL_DATA=/usr/local/lib/python3.6/site-packages/fiona/gdal_data
 ENV PROJ_DATA=/usr/local/lib/python3.6/site-packages/fiona/proj_data

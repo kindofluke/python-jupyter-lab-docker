@@ -19,3 +19,5 @@ sklearn
 sklearn-pandas
 matplotlib
 seaborn
+bokeh
+
