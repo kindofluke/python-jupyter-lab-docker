@@ -57,9 +57,11 @@ RUN jupyter labextension install @ijmbarr/jupyterlab_spellchecker
 RUN jupyter labextension install jupyterlab_bokeh
 RUN jupyter nbconvert --generate-config
 COPY jupyter_nbconvert_config.py /root/.jupyter/jupyter_nbconvert_config.py
-
 RUN pip install jupytext
 RUN jupyter lab build
+RUN pip install --user https://github.com/rogerbinns/apsw/releases/download/3.28.0-r1/apsw-3.28.0-r1.zip \
+--global-option=fetch --global-option=--version --global-option=3.28.0 --global-option=--all \
+--global-option=build --global-option=--enable-all-extensions
 
 
 
