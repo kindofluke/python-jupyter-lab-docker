@@ -58,6 +58,9 @@ RUN jupyter labextension install jupyterlab_bokeh
 RUN jupyter nbconvert --generate-config
 COPY jupyter_nbconvert_config.py /root/.jupyter/jupyter_nbconvert_config.py
 
+RUN pip install jupytext
+RUN jupyter lab build
+
 
 
 ENV GDAL_DATA=/usr/local/lib/python3.6/site-packages/fiona/gdal_data
