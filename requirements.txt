@@ -20,4 +20,9 @@ sklearn-pandas
 matplotlib
 seaborn
 bokeh
+termcolor
+fuzzywuzzy
+python-levenshtein
+usaddress
+pudb
 
