@@ -133,7 +133,7 @@
 #  strip_trailing_newline - wrap_text
 
 ## This allows you to exclude code cells from all templates if set to True.
-c.TemplateExporter.exclude_code_cell = False
+c.TemplateExporter.exclude_code_cell = True
 
 ## This allows you to exclude code cell inputs from all templates if set to True.
 c.TemplateExporter.exclude_input = True
