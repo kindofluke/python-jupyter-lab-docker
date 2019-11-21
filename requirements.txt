@@ -24,4 +24,5 @@ fuzzywuzzy
 python-levenshtein
 usaddress
 pudb
-
+-e git+http://github.com/rogerbinns/apsw.git@3.28.0-r1#egg=apsw --global-option=fetch --global-option=--version --globa
+l-option=3.28.0 --global-option=--all --global-option=build --global-option=--enable-all-extensions
