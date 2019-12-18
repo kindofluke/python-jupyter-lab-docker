@@ -54,7 +54,6 @@ RUN CD_VERSION=$(if [ ${CHROME_DRIVER_VERSION:-latest} = "latest" ]; then echo $
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 RUN jupyter labextension install @ijmbarr/jupyterlab_spellchecker
-RUN jupyter labextension install jupyterlab_bokeh
 RUN jupyter nbconvert --generate-config
 COPY jupyter_nbconvert_config.py /root/.jupyter/jupyter_nbconvert_config.py
 RUN pip install jupytext nb_black
